@@ -183,6 +183,32 @@ export default tseslint.config(
       "lines-between-class-members": ["error", "always"],
     },
     settings: {
+      'boundaries/elements': [
+        {
+          'type': 'app',
+          'pattern': 'src/app/**'
+        },
+        {
+          'type': 'pages',
+          'pattern': 'src/pages/**'
+        },
+        {
+          'type': 'widgets',
+          'pattern': 'src/widgets/**'
+        },
+        {
+          'type': 'features',
+          'pattern': 'src/features/**'
+        },
+        {
+          'type': 'entities',
+          'pattern': 'src/entities/**'
+        },
+        {
+          'type': 'shared',
+          'pattern': 'src/shared/**'
+        },
+      ],
       'import/resolver': {
         'typescript': {
           'project': 'tsconfig.app.json'
